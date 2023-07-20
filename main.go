@@ -66,7 +66,7 @@ func ImportWords(list string) []string {
 
 func FormatWords(mangled []string, leet string) (result []string) {
 
-	// Create a string array of top songs of the year
+	// Create a string slice of top songs of the year
 	songs := []string{"Shape of You",
 		"Despacito",
 		"That's What I Like",
@@ -141,7 +141,7 @@ func FormatWords(mangled []string, leet string) (result []string) {
 		"Mercy",
 	}
 
-	// Add season, nfl, nba, and nhl teams to string array
+	// Add season, nfl, nba, and nhl teams to string
 	seasons := []string{"Summer", "Fall", "Spring", "Winter", "Autumn"}
 	nfl_teams := []string{"Cardinals",
 		"Falcons",
@@ -337,7 +337,7 @@ func FormatWords(mangled []string, leet string) (result []string) {
 			}
 		}
 
-		// change characters for words in the mangled array
+		// change characters for words in the mangled
 		for _, line := range result {
 			replace := strings.Replace(line, "a", "@", 3)
 			result = append(result, replace)
@@ -427,7 +427,7 @@ func FormatWords(mangled []string, leet string) (result []string) {
 }
 
 func YearAdd(managledres []string) (final []string) {
-	// Adds years to each of the lines in the mangled array
+	// Adds years to each of the lines in the mangled
 	// Add years into string array for the next 5 years.
 	dt := time.Now()
 	date := dt.String()
